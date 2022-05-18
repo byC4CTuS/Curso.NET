@@ -15,8 +15,8 @@ Console.WriteLine("¿Desea continuar? Ingrese 'S' para una respuesta afirmativa 
 continuar = Console.ReadLine();
 
 if (continuar.ToUpper() == "S")
-    { 
-    }
+{ 
+}
 else if (continuar.ToUpper() == "N")
 {
     Console.WriteLine("Programa finalizado correctamete");
