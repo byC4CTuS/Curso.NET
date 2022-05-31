@@ -1,0 +1,15 @@
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\bin\Release\net6.0\Ejercicio 1.exe
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\bin\Release\net6.0\Ejercicio 1.deps.json
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\bin\Release\net6.0\Ejercicio 1.runtimeconfig.json
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\bin\Release\net6.0\Ejercicio 1.dll
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\bin\Release\net6.0\Ejercicio 1.pdb
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.csproj.AssemblyReference.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.AssemblyInfoInputs.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.AssemblyInfo.cs
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.csproj.CoreCompileInputs.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.dll
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\refint\Ejercicio 1.dll
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.pdb
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\Ejercicio 1.genruntimeconfig.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 1\obj\Release\net6.0\ref\Ejercicio 1.dll
