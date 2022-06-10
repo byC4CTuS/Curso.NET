@@ -126,13 +126,24 @@ for (int i = 0; i < bingo.GetLength(0); i++)
 
 
 
-    Console.WriteLine();
+Console.WriteLine();
 Console.WriteLine("---------------------------------------------");
 for (int i = 0; i < bingo.GetLength(0); i++)
 {
     for (int j = 0; j < bingo.GetLength(1); j++)
     {
-        Console.Write($"{bingo[i, j]} |");
+        
+        if (bingo[i, j] == 0)
+        {
+            Console.Write($"    |");
+        }else if (bingo[i, j] > 0 && bingo[i,j] < 10)
+        {
+            Console.Write($" 0{bingo[i, j]} |");
+        }
+        else
+        {
+            Console.Write($" {bingo[i, j]} |");
+        }
     }
     Console.WriteLine();
 }
