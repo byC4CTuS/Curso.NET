@@ -1,0 +1,15 @@
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\bin\Debug\net6.0\Ejercicio 2 Intento 2.exe
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\bin\Debug\net6.0\Ejercicio 2 Intento 2.deps.json
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\bin\Debug\net6.0\Ejercicio 2 Intento 2.runtimeconfig.json
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\bin\Debug\net6.0\Ejercicio 2 Intento 2.dll
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\bin\Debug\net6.0\Ejercicio 2 Intento 2.pdb
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.csproj.AssemblyReference.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.AssemblyInfoInputs.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.AssemblyInfo.cs
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.csproj.CoreCompileInputs.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.dll
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\refint\Ejercicio 2 Intento 2.dll
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.pdb
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\Ejercicio 2 Intento 2.genruntimeconfig.cache
+C:\Users\thelo\Desktop\Curso.NET\Ejercicios Clase 9\Ejercicio 2 Intento 2\obj\Debug\net6.0\ref\Ejercicio 2 Intento 2.dll
