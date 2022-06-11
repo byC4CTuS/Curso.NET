@@ -12,84 +12,84 @@ Generar un programa que cree un cartón de bingo aleatorio y lo muestre por pant
 
 Random numeros = new Random();
 
-int[,] bingo = new int[3, 9];
-int[,] pos = new int[3, 5];
+int[,] bingo = new int[3, 9];                       // Matriz pal bingo
+int[,] pos = new int[3, 5];                         // Matriz de posiciciones  
 int cont = 0;
 int aux = 0;
 
-do
-{
-for (int i = 0; i < 3; i++)
-{
-    for (int j = 0; j < 5; j++)
-    {
-        while (true)
-        {
-            cont = 0;
-            pos[i,j] = numeros.Next(0, 9);
-                for (int k = 0; k < j; k++)
-                {
-                    if (pos[i,j] == pos[i,k])
-                    {
-                    cont++;
-                    }
-                }
-            if (cont == 0)
-            {
-                break;
-            }
-        }
-    }
-}
-
-cont = 0;
-
-for (int num = 0 ; num < 9; num++)
-{
-    aux = 0;
+do                                                  // Llenado de la matriz pos, solo necesito generar las posicion j
+{                                                   // porque utilizo la i (filas) de la matriz pos para llenar bingo
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            if (pos[i,j] == num)
+            while (true)
             {
-                aux++;
+                cont = 0;
+                pos[i,j] = numeros.Next(0, 9);          // Genero las posiciones j para el bingo
+                for (int k = 0; k < j; k++)             // Comprobacion de que no se genere una posicion repetida
+                {
+                    if (pos[i,j] == pos[i,k])           // Si el numero generado es igual a otro anterior en la misma fila --> cont++
+                    {
+                    cont++;
+                    }
+                }
+                if (cont == 0)                          // Si el contador es 0 es que no se repite el numero generado
+                {                                       // Si es distinto de 0 vuelve a generar y comprobar el numero
+                break;
+                }
             }
         }
     }
-    if (aux == 0 || aux == 3)
-    {
-    cont++;
+
+
+    cont = 0;
+
+    for (int num = 0 ; num < 9; num++)                  // Recorro toda la matriz pos contando la cantidad de veces que se
+    {                                                   // repite cada posicion 0 - 8
+        aux = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (pos[i,j] == num)
+                {
+                    aux++;
+                }
+            }
+        }
+        if (aux == 0 || aux == 3)                       // Si la pos se repite 3 veces o ninguna --> cont++
+        {
+        cont++;                                         // Si el cont es != 0 es que una columna de la matriz bingo esta o llena o vacia
+        }                                               // por lo que no cumplira la condicion de 1 o 2 numeros por columna y regenerara 
+    }                                                   // la matriz pos
+
+    Console.WriteLine();
+    Console.WriteLine();
+
+    for (int i = 0; i < 3; i++)                         // Recorro la matriz pos para verla en pantalla, mas debug visual que otra cosa.
+    {   
+        for (int j = 0; j < 5; j++)
+        {
+            Console.Write(pos[i,j] + " ");
+        }
+        Console.WriteLine();
     }
-}
 
-    Console.WriteLine();
-    Console.WriteLine();
+} while (cont != 0);                                    // Cierre del while que explique arriba
 
-    for (int i = 0; i < 3; i++)
+
+for (int i = 0; i < 3; i++)                                                                     // Recorro la matriz pos 
 {
     for (int j = 0; j < 5; j++)
     {
-        Console.Write(pos[i,j] + " ");
-    }
-    Console.WriteLine();
-}
-
-}
-while (cont != 0);
-
-
-for (int i = 0; i < pos.GetLength(0); i++)
-{
-    for (int j = 0; j < pos.GetLength(1); j++)
-    {
         while (true)
         {
-            cont = 0;
-            bingo[i, pos[i, j]] = numeros.Next(0 + (10 * pos[i, j]), 10 + (10 * pos[i, j]));
-            for (int k = 0; k < i; k++)
+            cont = 0;                                                                           // Para cada valor en pos, tomo su i y utilizo el valor como j, [i del valor, j --> valor]
+            bingo[i, pos[i, j]] = numeros.Next(0 + (10 * pos[i, j]), 10 + (10 * pos[i, j]));    // y en esa posicion que obtengo, genero un numero teniendo en cuenta su columna (el valor).
+            for (int k = 0; k < i; k++)                                                         // Con este for compruebo que no se repita el numero que genero con otro en su columna.
             {
-                if (bingo[i, pos[i, j]] == bingo[k, pos[i, j]] || bingo[i, pos[i, j]] == 0)
+                if (bingo[i, pos[i, j]] == bingo[k, pos[i, j]] || bingo[i, pos[i, j]] == 0)     // Ademas no dejo que se genere el 0 por cosas xd
                 {
                     cont++;
                 }
@@ -102,30 +102,14 @@ for (int i = 0; i < pos.GetLength(0); i++)
     }
 }
 
-//while (true)
-//{
-//    cont = 0;
-//    bingo[i, pos[i, j]] = numeros.Next(1 + (10 * pos[i, j]), 10 + (10 * pos[i, j]));
-//    for (int k = 0; k < i; k++)
-//    {
-//        if (pos[i, j] == pos[k, j])
-//        {
-//            cont++;
-//        }
-//    }
-//    if (cont == 0)
-//    {
-//        break;
-//    }
-//}
-
-
 
 Console.WriteLine();
 Console.WriteLine("---------------------------------------------");
-for (int i = 0; i < bingo.GetLength(0); i++)
+Console.WriteLine();
+
+for (int i = 0; i < 3; i++)                                     // Coso para mostrar el bingo y que no sea nefasto
 {
-    for (int j = 0; j < bingo.GetLength(1); j++)
+    for (int j = 0; j < 9; j++)
     {
 
         if (bingo[i, j] == 0)
